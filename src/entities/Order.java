@@ -10,8 +10,6 @@ import entidades.enums.OrderStatus;
 public class Order {
 	
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-
-	
 	
 	private Date moment;
 	private OrderStatus status;
@@ -88,7 +86,7 @@ public class Order {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Order moment: ");
 		sb.append(sdf.format(moment) + "\n");
-		sb.append("Order Status");
+		sb.append("Order Status: ");
 		sb.append(status + "\n");
 		sb.append("Client: ");
 		sb.append(client + "\n");
